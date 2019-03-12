@@ -1,0 +1,6 @@
+- zypper:
+   update_cache: yes
+   name: htop 
+   state: present
+  become: yes
+

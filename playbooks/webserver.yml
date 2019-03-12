@@ -1,0 +1,24 @@
+- name: Provisionando um Servidor Web
+  hosts: minion
+  become: true
+  tasks:
+  - file:
+      path: /tmp/site
+      state: directory      
+  - unarchive:
+      src: /root/playbooks/files/site.tar.gz
+      dest: /tmp/site
+  - name: Instalar apache
+    package:
+      name: apache2
+      state: present
+  - file:
+      path: /var/www/html/infra-agil
+      state: directory
+  - unarchive:
+      src: /root/playbooks/files/site.tar.gz
+      dest: /var/www/html/infra-agil
+  - service:
+      name: apache2
+      state: restarted
+      enabled: true 

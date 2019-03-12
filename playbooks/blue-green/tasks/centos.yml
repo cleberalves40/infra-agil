@@ -1,0 +1,6 @@
+- yum:
+   update_cache: yes
+   name: nmap 
+   state: present
+  become: yes
+
