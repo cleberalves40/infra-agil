@@ -1,6 +1,6 @@
-# Inrfaestrutura Agil
+# Infraestrutura Agil
 
-Este repositorio contem os exercicio do Curso de INfraestrutura Agil
+Este repositorio contem os exercicio do Curso de Infraestrutura Agil
 
 ### Ansible
 
