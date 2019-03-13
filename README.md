@@ -1,6 +1,6 @@
 # Infraestrutura Agil
 
-Este repositorio contem os exercicio do Curso de Infraestrutura Agil
+Este repositorio contem os exercícios do Curso de Infraestrutura Agil
 
 ### Ansible
 
@@ -15,9 +15,5 @@ Os seguintes conceitos de **Ansible** foram apresentados:
 ##### Como executar as playbooks
 
 
-´´´´´
 cd playbooks
 ansible-playbook webserver.yml
-
-
-´´´´´
